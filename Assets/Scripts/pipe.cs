@@ -17,11 +17,11 @@ public class pipe : MonoBehaviour
     void Update()
     {
         
-        if (transform.position.x < -14)
+        if (transform.position.x < -16)
         {
             float yy = Random.Range(-2.0f, 2.0f);
 
-            transform.position = new Vector3(14, yy, transform.position.z);
+            transform.position = new Vector3(16, yy, transform.position.z);
         }
         else 
         {
