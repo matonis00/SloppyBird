@@ -39,7 +39,7 @@ public class playerEventController : MonoBehaviour
             jumping = false;
             onFallEvent?.Invoke();
         }
-        if (transform.position.y <= -4.5f)
+        if (transform.position.y <= -5.5f)
         {
             onDeathEvent?.Invoke();
         }
