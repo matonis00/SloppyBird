@@ -5,7 +5,9 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     [SerializeField] float up=5.0f;
+    [SerializeField] float maxWidth=6.0f;
     Rigidbody2D rigidbody2D;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +19,13 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)&& transform.position.y < maxWidth)
         {
             rigidbody2D.AddForce(Vector2.up*up);
+        }
+        if (transform.position.y <= -4.5f)
+        {
+            rigidbody2D.Sleep();
         }
     }
 }
