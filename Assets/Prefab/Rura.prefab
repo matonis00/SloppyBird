@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7250687798083382677}
   m_Layer: 0
   m_Name: Square bottom
-  m_TagString: Untagged
+  m_TagString: rura
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: -6999560530635182181}
   m_Layer: 0
   m_Name: Rura
-  m_TagString: Untagged
+  m_TagString: rura
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 4831991732501836443}
   m_Layer: 0
   m_Name: MiddleColider
-  m_TagString: Untagged
+  m_TagString: PointColider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 896157741105660503}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: rura
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 6283584232480302674}
   m_Layer: 0
   m_Name: Square top
-  m_TagString: Untagged
+  m_TagString: rura
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 309828704336122420}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: rura
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
