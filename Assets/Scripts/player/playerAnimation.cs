@@ -15,7 +15,7 @@ public class playerAnimation : MonoBehaviour
 
         eventController.onJumpEvent.AddListener(onJump);
         eventController.onFallEvent.AddListener(onFall);
-        eventController.onDeath.AddListener(onDeath);
+        eventController.onDeathEvent.AddListener(onDeath);
     }
 
     private void onJump()
