@@ -9,7 +9,7 @@ public class playerMovement : MonoBehaviour, IVelocity
     //[SerializeField] float maxWidth=6.0f;
     Rigidbody2D rigidbody2D;
     playerEventController eventController;
-
+    bool dead = false;
 
     public Vector2 GetVelocity()
     {
@@ -17,7 +17,7 @@ public class playerMovement : MonoBehaviour, IVelocity
     }
 
     public void SetVelocity(Vector2 velocity)
-    {
+    {   if(!dead)
         rigidbody2D.AddForce(velocity);
     }
 
@@ -30,6 +30,7 @@ public class playerMovement : MonoBehaviour, IVelocity
 
     private void onDeath()
     {
+        dead = true;
         rigidbody2D.Sleep();
     }
     
