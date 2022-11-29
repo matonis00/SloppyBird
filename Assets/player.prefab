@@ -16,8 +16,9 @@ GameObject:
   - component: {fileID: 3318715270772032245}
   - component: {fileID: 622154721278508792}
   - component: {fileID: 7565880770879410233}
+  - component: {fileID: 6555630956665449475}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,8 +80,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.990566, g: 0.95014596, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6f4192a706290484f98b702510598a05, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -126,7 +127,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &3422594152562699171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,7 +150,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3422594152562699182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4568bfa3eda9294fb37f7ebb0d7baff, type: 3}
+  m_Script: {fileID: 11500000, guid: cc536de6c9e67ed4ea404e95414ea03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   onJumpEvent:
@@ -188,3 +189,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   up: 5
+--- !u!95 &6555630956665449475
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3422594152562699182}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ef4f9eb8a5d87c40a5a530641e88344, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
