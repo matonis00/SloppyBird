@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 1620477887454255631}
   - component: {fileID: 4831991732501836443}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: MiddleColider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,8 +198,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4029694017489579503}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.3544966}
-  m_LocalScale: {x: -3.037819, y: -5.493231, z: -3.037819}
+  m_LocalPosition: {x: -0.03, y: -2.14, z: -0.3544966}
+  m_LocalScale: {x: -2.9841104, y: -5.3961105, z: -2.9841104}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2803797298544170814}
