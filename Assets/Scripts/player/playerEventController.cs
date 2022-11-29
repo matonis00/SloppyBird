@@ -36,6 +36,7 @@ public class playerEventController : MonoBehaviour
         }
         if(velocity.y < 0 && jumping)
         {
+            jumping = false;
             onFallEvent?.Invoke();
         }
         if (transform.position.y <= -4.5f)
