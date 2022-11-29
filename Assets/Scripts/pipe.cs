@@ -8,7 +8,7 @@ public class pipe : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float yy = Random.Range(-5.0f, 5.0f);
+        float yy = Random.Range(-2.0f, 2.0f);
         transform.position = new Vector3(transform.position.x, yy, transform.position.z);
         
     }
@@ -17,11 +17,11 @@ public class pipe : MonoBehaviour
     void Update()
     {
         
-        if (transform.position.x < -12)
+        if (transform.position.x < -14)
         {
-            float yy = Random.Range(-5.0f, 5.0f);
+            float yy = Random.Range(-2.0f, 2.0f);
 
-            transform.position = new Vector3(12, yy, transform.position.z);
+            transform.position = new Vector3(14, yy, transform.position.z);
         }
         else 
         {
