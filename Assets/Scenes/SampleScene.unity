@@ -520,6 +520,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4553878948e9b244facb466763860b53, type: 3}
+--- !u!114 &1137536662 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3318715270772032245, guid: 2f0981dc9c358874da62a7b55247a042, type: 3}
+  m_PrefabInstance: {fileID: 419400394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc536de6c9e67ed4ea404e95414ea03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1327785729 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2803797298544170814, guid: 4553878948e9b244facb466763860b53, type: 3}
@@ -811,7 +822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: 238.99}
+  m_AnchoredPosition: {x: 0, y: 238.99}
   m_SizeDelta: {x: 58.38, y: 41.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1965349082
@@ -923,7 +934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c69db44a4adac438a50ec7259672af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventController: {fileID: 0}
+  eventController: {fileID: 1137536662}
+  textMesh: {fileID: 0}
 --- !u!4 &2019152651 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2803797298544170814, guid: 4553878948e9b244facb466763860b53, type: 3}

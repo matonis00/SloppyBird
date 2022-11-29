@@ -44,16 +44,32 @@ public class playerEventController : MonoBehaviour
             onDeathEvent?.Invoke();
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         //Check to see if the tag on the collider is equal to Enemy
+        //Debug.Log("punkt");
         if (other.tag == "rura")
         {
+            Debug.Log("rura");
             onDeathEvent?.Invoke();
         }
         else if (other.tag == "PointColider")
         {
+            Debug.Log("punkt zdobyty");
             onPointEarnedEvent?.Invoke();
         }
     }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    Debug.Log("punkt2");
+    //    if (collision.collider.tag == "rura")
+    //    {
+    //        onDeathEvent?.Invoke();
+    //    }
+    //    else if (collision.collider.tag == "PointColider")
+    //    {
+    //        onPointEarnedEvent?.Invoke();
+
+    //    }
+    //}
 }
