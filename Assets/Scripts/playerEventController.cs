@@ -28,15 +28,27 @@ public class playerEventController : MonoBehaviour
         if(velocity.y > 0 && !jumping)
         {
             jumping = true;
-            onJumpEvent.Invoke();
+            onJumpEvent?.Invoke();
         }
         if(velocity.y < 0 && jumping)
         {
-            onFallEvent.Invoke();
+            onFallEvent?.Invoke();
         }
         if (transform.position.y <= -4.5f)
         {
             onDeath?.Invoke();
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        //Check to see if the tag on the collider is equal to Enemy
+        if (other.tag == "rura")
+        {
+            onDeath?.Invoke();
+        }
+        else if (other.tag == "PointColider")
+        { 
+            
         }
     }
 }
