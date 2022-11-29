@@ -7,10 +7,10 @@ using UnityEngine.UI;
 public class scoreControler : MonoBehaviour
 {
     [SerializeField]playerEventController eventController;
-    [SerializeField] Text textMesh;
+    [SerializeField] TextMeshProUGUI textMesh;
     // Start is called before the first frame update
 
-    private int points = 0;
+    [SerializeField] int points = 0;
 
     private void addPoint()
     {
