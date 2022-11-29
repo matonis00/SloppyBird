@@ -25,7 +25,7 @@ public class playerMovement : MonoBehaviour, IVelocity
     {
         rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         eventController = gameObject.GetComponent<playerEventController>();
-        eventController.onDeath.AddListener(onDeath);
+        eventController.onDeathEvent.AddListener(onDeath);
     }
 
     private void onDeath()
