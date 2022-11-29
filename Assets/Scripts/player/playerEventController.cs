@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,9 +8,12 @@ public class playerEventController : MonoBehaviour
 {
     public UnityEvent onJumpEvent;
     public UnityEvent onFallEvent;
-    public UnityEvent onDeath;
+    public UnityEvent onDeathEvent;
+    public UnityEvent onPointEarnedEvent;
 
     [SerializeField] float maxWidth = 6.0f;
+    [SerializeField] int points = 1;
+    [SerializeField] TextMeshPro textMesh;
 
     private IVelocity velocityComp;
     private bool jumping;
@@ -36,7 +40,7 @@ public class playerEventController : MonoBehaviour
         }
         if (transform.position.y <= -4.5f)
         {
-            onDeath?.Invoke();
+            onDeathEvent?.Invoke();
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -44,11 +48,11 @@ public class playerEventController : MonoBehaviour
         //Check to see if the tag on the collider is equal to Enemy
         if (other.tag == "rura")
         {
-            onDeath?.Invoke();
+            onDeathEvent?.Invoke();
         }
         else if (other.tag == "PointColider")
-        { 
-            
+        {
+            onPointEarnedEvent?.Invoke();
         }
     }
 }
