@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 6555630956665449475}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,10 +159,15 @@ MonoBehaviour:
   onFallEvent:
     m_PersistentCalls:
       m_Calls: []
-  onDeath:
+  onDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onPointEarnedEvent:
     m_PersistentCalls:
       m_Calls: []
   maxWidth: 6
+  points: 1
+  textMesh: {fileID: 0}
 --- !u!114 &622154721278508792
 MonoBehaviour:
   m_ObjectHideFlags: 0
