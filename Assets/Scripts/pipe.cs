@@ -12,6 +12,7 @@ public class pipe : MonoBehaviour
     {
         float yy = Random.Range(-2.0f, 2.0f);
         transform.position = new Vector3(transform.position.x, yy, transform.position.z);
+
         eventController = GameObject
             .FindGameObjectWithTag("Player")
             .GetComponent<playerEventController>();
@@ -26,11 +27,11 @@ public class pipe : MonoBehaviour
     void Update()
     {
         
-        if (transform.position.x < -16)
+        if (transform.position.x < -14)
         {
-            float yy = Random.Range(-2.0f, 2.0f);
+            float yy = Random.Range(-2.5f, 2.5f);
 
-            transform.position = new Vector3(16, yy, transform.position.z);
+            transform.position = new Vector3(22, yy, transform.position.z);
         }
         else if(movement) 
         {
